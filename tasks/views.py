@@ -13,3 +13,8 @@ def Home(request):
 
 def show_task(request):
     return HttpResponse('show all task')
+
+def show_specific_task(request,id):
+    print(id,"id")
+    print(type(id))
+    return HttpResponse(f"this is specific task page{id}")
